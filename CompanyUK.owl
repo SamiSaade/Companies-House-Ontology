@@ -1,0 +1,798 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://www.semanticweb.org/SamiSaade/ontologies/UKCompanies/"
+     xml:base="http://www.semanticweb.org/SamiSaade/ontologies/UKCompanies/"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:swrl="http://www.w3.org/2003/11/swrl#"
+     xmlns:swrla="http://swrl.stanford.edu/ontologies/3.3/swrla.owl#"
+     xmlns:swrlb="http://www.w3.org/2003/11/swrlb#"
+     xmlns:UKCompanies="http://www.semanticweb.org/SamiSaade/ontologies/UKCompanies#">
+    <owl:Ontology rdf:about="http://www.semanticweb.org/SamiSaade/ontologies/UKCompanies"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Annotation properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled -->
+
+    <owl:AnnotationProperty rdf:about="http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/SamiSaade/ontologies/UKCompanies#has_economic_activity -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/SamiSaade/ontologies/UKCompanies#has_economic_activity">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AsymmetricProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#IrreflexiveProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/SamiSaade/ontologies/UKCompanies#Company"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/SamiSaade/ontologies/UKCompanies#Economic_Activity"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/SamiSaade/ontologies/UKCompanies#has_sic -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/SamiSaade/ontologies/UKCompanies#has_sic">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AsymmetricProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#IrreflexiveProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/SamiSaade/ontologies/UKCompanies#Company"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/SamiSaade/ontologies/UKCompanies#SIC"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/SamiSaade/ontologies/UKCompanies#part_of -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/SamiSaade/ontologies/UKCompanies#part_of">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#TransitiveProperty"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/SamiSaade/ontologies/UKCompanies#registered_in -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/SamiSaade/ontologies/UKCompanies#registered_in">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AsymmetricProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#IrreflexiveProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/SamiSaade/ontologies/UKCompanies#Company"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/SamiSaade/ontologies/UKCompanies#Place"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/SamiSaade/ontologies/UKCompanies#Company_ID -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/SamiSaade/ontologies/UKCompanies#Company_ID">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/SamiSaade/ontologies/UKCompanies#Company"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/SamiSaade/ontologies/UKCompanies#Name -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/SamiSaade/ontologies/UKCompanies#Name"/>
+    
+
+
+    <!-- http://www.semanticweb.org/SamiSaade/ontologies/UKCompanies#SIC_Code -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/SamiSaade/ontologies/UKCompanies#SIC_Code">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/SamiSaade/ontologies/UKCompanies#Company"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/SamiSaade/ontologies/UKCompanies#has_population -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/SamiSaade/ontologies/UKCompanies#has_population">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/SamiSaade/ontologies/UKCompanies#Place"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/SamiSaade/ontologies/UKCompanies#Agriculture_Forestry_and_Fishing -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/SamiSaade/ontologies/UKCompanies#Agriculture_Forestry_and_Fishing">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/SamiSaade/ontologies/UKCompanies#Economic_Activity"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/SamiSaade/ontologies/UKCompanies#Arts_entertainment_and_recreation -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/SamiSaade/ontologies/UKCompanies#Arts_entertainment_and_recreation">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/SamiSaade/ontologies/UKCompanies#Economic_Activity"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/SamiSaade/ontologies/UKCompanies#City -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/SamiSaade/ontologies/UKCompanies#City">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/SamiSaade/ontologies/UKCompanies#Place"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/SamiSaade/ontologies/UKCompanies#Company -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/SamiSaade/ontologies/UKCompanies#Company"/>
+    
+
+
+    <!-- http://www.semanticweb.org/SamiSaade/ontologies/UKCompanies#Construction -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/SamiSaade/ontologies/UKCompanies#Construction">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/SamiSaade/ontologies/UKCompanies#Economic_Activity"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/SamiSaade/ontologies/UKCompanies#Country -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/SamiSaade/ontologies/UKCompanies#Country">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/SamiSaade/ontologies/UKCompanies#Place"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/SamiSaade/ontologies/UKCompanies#Economic_Activity -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/SamiSaade/ontologies/UKCompanies#Economic_Activity"/>
+    
+
+
+    <!-- http://www.semanticweb.org/SamiSaade/ontologies/UKCompanies#Financial_and_insurance_activities -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/SamiSaade/ontologies/UKCompanies#Financial_and_insurance_activities">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/SamiSaade/ontologies/UKCompanies#Economic_Activity"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/SamiSaade/ontologies/UKCompanies#Information_and_communication -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/SamiSaade/ontologies/UKCompanies#Information_and_communication">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/SamiSaade/ontologies/UKCompanies#Economic_Activity"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/SamiSaade/ontologies/UKCompanies#Manufacturing -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/SamiSaade/ontologies/UKCompanies#Manufacturing">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/SamiSaade/ontologies/UKCompanies#Economic_Activity"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/SamiSaade/ontologies/UKCompanies#Place -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/SamiSaade/ontologies/UKCompanies#Place"/>
+    
+
+
+    <!-- http://www.semanticweb.org/SamiSaade/ontologies/UKCompanies#SIC -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/SamiSaade/ontologies/UKCompanies#SIC">
+        <rdfs:comment xml:lang="en">The SIC is a Standard Industrial Classification code that defines the company&apos;s area of economic activity. It is accompanied by an SIC Code. Categories was obtained from the GOV.UK website.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/SamiSaade/ontologies/UKCompanies#Town -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/SamiSaade/ontologies/UKCompanies#Town">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/SamiSaade/ontologies/UKCompanies#Place"/>
+    </owl:Class>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/SamiSaade/ontologies/UKCompanies#Camberwell -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/SamiSaade/ontologies/UKCompanies#Camberwell">
+        <rdf:type rdf:resource="http://www.semanticweb.org/SamiSaade/ontologies/UKCompanies#Town"/>
+        <UKCompanies:part_of rdf:resource="http://www.semanticweb.org/SamiSaade/ontologies/UKCompanies#London"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/SamiSaade/ontologies/UKCompanies#Growing_of_rice -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/SamiSaade/ontologies/UKCompanies#Growing_of_rice">
+        <rdf:type rdf:resource="http://www.semanticweb.org/SamiSaade/ontologies/UKCompanies#Company"/>
+        <UKCompanies:SIC_Code rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">01120</UKCompanies:SIC_Code>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/SamiSaade/ontologies/UKCompanies#London -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/SamiSaade/ontologies/UKCompanies#London">
+        <rdf:type rdf:resource="http://www.semanticweb.org/SamiSaade/ontologies/UKCompanies#City"/>
+        <UKCompanies:part_of rdf:resource="http://www.semanticweb.org/SamiSaade/ontologies/UKCompanies#UK"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/SamiSaade/ontologies/UKCompanies#Rice_Co -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/SamiSaade/ontologies/UKCompanies#Rice_Co">
+        <rdf:type rdf:resource="http://www.semanticweb.org/SamiSaade/ontologies/UKCompanies#Company"/>
+        <UKCompanies:has_sic rdf:resource="http://www.semanticweb.org/SamiSaade/ontologies/UKCompanies#Growing_of_rice"/>
+        <UKCompanies:SIC_Code rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">01120</UKCompanies:SIC_Code>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/SamiSaade/ontologies/UKCompanies#UK -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/SamiSaade/ontologies/UKCompanies#UK">
+        <rdf:type rdf:resource="http://www.semanticweb.org/SamiSaade/ontologies/UKCompanies#Country"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/SamiSaade/ontologies/UKCompanies#Place"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Rules
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    <rdf:Description rdf:about="http://www.semanticweb.org/SamiSaade/ontologies/UKCompanies/s">
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Variable"/>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://www.semanticweb.org/SamiSaade/ontologies/UKCompanies/c">
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Variable"/>
+    </rdf:Description>
+    <rdf:Description>
+        <swrla:isRuleEnabled rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</swrla:isRuleEnabled>
+        <rdfs:comment></rdfs:comment>
+        <rdfs:label>SIC1-Agriculture</rdfs:label>
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Imp"/>
+        <swrl:body>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#DatavaluedPropertyAtom"/>
+                        <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/SamiSaade/ontologies/UKCompanies#SIC_Code"/>
+                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/SamiSaade/ontologies/UKCompanies/s"/>
+                        <swrl:argument2 rdf:resource="http://www.semanticweb.org/SamiSaade/ontologies/UKCompanies/c"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                        <rdf:first>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#BuiltinAtom"/>
+                                <swrl:builtin rdf:resource="http://www.w3.org/2003/11/swrlb#greaterThan"/>
+                                <swrl:arguments>
+                                    <rdf:Description>
+                                        <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+                                        <rdf:first rdf:resource="http://www.semanticweb.org/SamiSaade/ontologies/UKCompanies/c"/>
+                                        <rdf:rest>
+                                            <rdf:Description>
+                                                <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+                                                <rdf:first rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1000</rdf:first>
+                                                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                                            </rdf:Description>
+                                        </rdf:rest>
+                                    </rdf:Description>
+                                </swrl:arguments>
+                            </rdf:Description>
+                        </rdf:first>
+                        <rdf:rest>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                <rdf:first>
+                                    <rdf:Description>
+                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#BuiltinAtom"/>
+                                        <swrl:builtin rdf:resource="http://www.w3.org/2003/11/swrlb#lessThan"/>
+                                        <swrl:arguments>
+                                            <rdf:Description>
+                                                <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+                                                <rdf:first rdf:resource="http://www.semanticweb.org/SamiSaade/ontologies/UKCompanies/c"/>
+                                                <rdf:rest>
+                                                    <rdf:Description>
+                                                        <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+                                                        <rdf:first rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">4000</rdf:first>
+                                                        <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                                                    </rdf:Description>
+                                                </rdf:rest>
+                                            </rdf:Description>
+                                        </swrl:arguments>
+                                    </rdf:Description>
+                                </rdf:first>
+                                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                            </rdf:Description>
+                        </rdf:rest>
+                    </rdf:Description>
+                </rdf:rest>
+            </rdf:Description>
+        </swrl:body>
+        <swrl:head>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+                        <swrl:classPredicate rdf:resource="http://www.semanticweb.org/SamiSaade/ontologies/UKCompanies#Agriculture_Forestry_and_Fishing"/>
+                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/SamiSaade/ontologies/UKCompanies/s"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+            </rdf:Description>
+        </swrl:head>
+    </rdf:Description>
+    <rdf:Description>
+        <swrla:isRuleEnabled rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</swrla:isRuleEnabled>
+        <rdfs:comment></rdfs:comment>
+        <rdfs:label>SIC2-Manufacturing</rdfs:label>
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Imp"/>
+        <swrl:body>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#DatavaluedPropertyAtom"/>
+                        <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/SamiSaade/ontologies/UKCompanies#SIC_Code"/>
+                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/SamiSaade/ontologies/UKCompanies/s"/>
+                        <swrl:argument2 rdf:resource="http://www.semanticweb.org/SamiSaade/ontologies/UKCompanies/c"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                        <rdf:first>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#BuiltinAtom"/>
+                                <swrl:builtin rdf:resource="http://www.w3.org/2003/11/swrlb#greaterThan"/>
+                                <swrl:arguments>
+                                    <rdf:Description>
+                                        <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+                                        <rdf:first rdf:resource="http://www.semanticweb.org/SamiSaade/ontologies/UKCompanies/c"/>
+                                        <rdf:rest>
+                                            <rdf:Description>
+                                                <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+                                                <rdf:first rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">10000</rdf:first>
+                                                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                                            </rdf:Description>
+                                        </rdf:rest>
+                                    </rdf:Description>
+                                </swrl:arguments>
+                            </rdf:Description>
+                        </rdf:first>
+                        <rdf:rest>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                <rdf:first>
+                                    <rdf:Description>
+                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#BuiltinAtom"/>
+                                        <swrl:builtin rdf:resource="http://www.w3.org/2003/11/swrlb#lessThan"/>
+                                        <swrl:arguments>
+                                            <rdf:Description>
+                                                <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+                                                <rdf:first rdf:resource="http://www.semanticweb.org/SamiSaade/ontologies/UKCompanies/c"/>
+                                                <rdf:rest>
+                                                    <rdf:Description>
+                                                        <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+                                                        <rdf:first rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">33200</rdf:first>
+                                                        <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                                                    </rdf:Description>
+                                                </rdf:rest>
+                                            </rdf:Description>
+                                        </swrl:arguments>
+                                    </rdf:Description>
+                                </rdf:first>
+                                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                            </rdf:Description>
+                        </rdf:rest>
+                    </rdf:Description>
+                </rdf:rest>
+            </rdf:Description>
+        </swrl:body>
+        <swrl:head>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+                        <swrl:classPredicate rdf:resource="http://www.semanticweb.org/SamiSaade/ontologies/UKCompanies#Manufacturing"/>
+                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/SamiSaade/ontologies/UKCompanies/s"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+            </rdf:Description>
+        </swrl:head>
+    </rdf:Description>
+    <rdf:Description>
+        <swrla:isRuleEnabled rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</swrla:isRuleEnabled>
+        <rdfs:comment></rdfs:comment>
+        <rdfs:label>SIC3-Construction</rdfs:label>
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Imp"/>
+        <swrl:body>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#DatavaluedPropertyAtom"/>
+                        <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/SamiSaade/ontologies/UKCompanies#SIC_Code"/>
+                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/SamiSaade/ontologies/UKCompanies/s"/>
+                        <swrl:argument2 rdf:resource="http://www.semanticweb.org/SamiSaade/ontologies/UKCompanies/c"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                        <rdf:first>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#BuiltinAtom"/>
+                                <swrl:builtin rdf:resource="http://www.w3.org/2003/11/swrlb#greaterThan"/>
+                                <swrl:arguments>
+                                    <rdf:Description>
+                                        <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+                                        <rdf:first rdf:resource="http://www.semanticweb.org/SamiSaade/ontologies/UKCompanies/c"/>
+                                        <rdf:rest>
+                                            <rdf:Description>
+                                                <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+                                                <rdf:first rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">40000</rdf:first>
+                                                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                                            </rdf:Description>
+                                        </rdf:rest>
+                                    </rdf:Description>
+                                </swrl:arguments>
+                            </rdf:Description>
+                        </rdf:first>
+                        <rdf:rest>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                <rdf:first>
+                                    <rdf:Description>
+                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#BuiltinAtom"/>
+                                        <swrl:builtin rdf:resource="http://www.w3.org/2003/11/swrlb#lessThan"/>
+                                        <swrl:arguments>
+                                            <rdf:Description>
+                                                <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+                                                <rdf:first rdf:resource="http://www.semanticweb.org/SamiSaade/ontologies/UKCompanies/c"/>
+                                                <rdf:rest>
+                                                    <rdf:Description>
+                                                        <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+                                                        <rdf:first rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">44000</rdf:first>
+                                                        <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                                                    </rdf:Description>
+                                                </rdf:rest>
+                                            </rdf:Description>
+                                        </swrl:arguments>
+                                    </rdf:Description>
+                                </rdf:first>
+                                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                            </rdf:Description>
+                        </rdf:rest>
+                    </rdf:Description>
+                </rdf:rest>
+            </rdf:Description>
+        </swrl:body>
+        <swrl:head>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+                        <swrl:classPredicate rdf:resource="http://www.semanticweb.org/SamiSaade/ontologies/UKCompanies#Construction"/>
+                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/SamiSaade/ontologies/UKCompanies/s"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+            </rdf:Description>
+        </swrl:head>
+    </rdf:Description>
+    <rdf:Description>
+        <swrla:isRuleEnabled rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</swrla:isRuleEnabled>
+        <rdfs:comment></rdfs:comment>
+        <rdfs:label>SIC4-InformationandCommunication</rdfs:label>
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Imp"/>
+        <swrl:body>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#DatavaluedPropertyAtom"/>
+                        <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/SamiSaade/ontologies/UKCompanies#SIC_Code"/>
+                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/SamiSaade/ontologies/UKCompanies/s"/>
+                        <swrl:argument2 rdf:resource="http://www.semanticweb.org/SamiSaade/ontologies/UKCompanies/c"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                        <rdf:first>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#BuiltinAtom"/>
+                                <swrl:builtin rdf:resource="http://www.w3.org/2003/11/swrlb#greaterThan"/>
+                                <swrl:arguments>
+                                    <rdf:Description>
+                                        <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+                                        <rdf:first rdf:resource="http://www.semanticweb.org/SamiSaade/ontologies/UKCompanies/c"/>
+                                        <rdf:rest>
+                                            <rdf:Description>
+                                                <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+                                                <rdf:first rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">58000</rdf:first>
+                                                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                                            </rdf:Description>
+                                        </rdf:rest>
+                                    </rdf:Description>
+                                </swrl:arguments>
+                            </rdf:Description>
+                        </rdf:first>
+                        <rdf:rest>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                <rdf:first>
+                                    <rdf:Description>
+                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#BuiltinAtom"/>
+                                        <swrl:builtin rdf:resource="http://www.w3.org/2003/11/swrlb#lessThan"/>
+                                        <swrl:arguments>
+                                            <rdf:Description>
+                                                <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+                                                <rdf:first rdf:resource="http://www.semanticweb.org/SamiSaade/ontologies/UKCompanies/c"/>
+                                                <rdf:rest>
+                                                    <rdf:Description>
+                                                        <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+                                                        <rdf:first rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">64000</rdf:first>
+                                                        <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                                                    </rdf:Description>
+                                                </rdf:rest>
+                                            </rdf:Description>
+                                        </swrl:arguments>
+                                    </rdf:Description>
+                                </rdf:first>
+                                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                            </rdf:Description>
+                        </rdf:rest>
+                    </rdf:Description>
+                </rdf:rest>
+            </rdf:Description>
+        </swrl:body>
+        <swrl:head>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+                        <swrl:classPredicate rdf:resource="http://www.semanticweb.org/SamiSaade/ontologies/UKCompanies#Information_and_communication"/>
+                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/SamiSaade/ontologies/UKCompanies/s"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+            </rdf:Description>
+        </swrl:head>
+    </rdf:Description>
+    <rdf:Description>
+        <swrla:isRuleEnabled rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</swrla:isRuleEnabled>
+        <rdfs:comment></rdfs:comment>
+        <rdfs:label>SIC5-FinanceandInsurance</rdfs:label>
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Imp"/>
+        <swrl:body>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#DatavaluedPropertyAtom"/>
+                        <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/SamiSaade/ontologies/UKCompanies#SIC_Code"/>
+                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/SamiSaade/ontologies/UKCompanies/s"/>
+                        <swrl:argument2 rdf:resource="http://www.semanticweb.org/SamiSaade/ontologies/UKCompanies/c"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                        <rdf:first>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#BuiltinAtom"/>
+                                <swrl:builtin rdf:resource="http://www.w3.org/2003/11/swrlb#greaterThan"/>
+                                <swrl:arguments>
+                                    <rdf:Description>
+                                        <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+                                        <rdf:first rdf:resource="http://www.semanticweb.org/SamiSaade/ontologies/UKCompanies/c"/>
+                                        <rdf:rest>
+                                            <rdf:Description>
+                                                <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+                                                <rdf:first rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">64000</rdf:first>
+                                                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                                            </rdf:Description>
+                                        </rdf:rest>
+                                    </rdf:Description>
+                                </swrl:arguments>
+                            </rdf:Description>
+                        </rdf:first>
+                        <rdf:rest>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                <rdf:first>
+                                    <rdf:Description>
+                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#BuiltinAtom"/>
+                                        <swrl:builtin rdf:resource="http://www.w3.org/2003/11/swrlb#lessThan"/>
+                                        <swrl:arguments>
+                                            <rdf:Description>
+                                                <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+                                                <rdf:first rdf:resource="http://www.semanticweb.org/SamiSaade/ontologies/UKCompanies/c"/>
+                                                <rdf:rest>
+                                                    <rdf:Description>
+                                                        <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+                                                        <rdf:first rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">67000</rdf:first>
+                                                        <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                                                    </rdf:Description>
+                                                </rdf:rest>
+                                            </rdf:Description>
+                                        </swrl:arguments>
+                                    </rdf:Description>
+                                </rdf:first>
+                                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                            </rdf:Description>
+                        </rdf:rest>
+                    </rdf:Description>
+                </rdf:rest>
+            </rdf:Description>
+        </swrl:body>
+        <swrl:head>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+                        <swrl:classPredicate rdf:resource="http://www.semanticweb.org/SamiSaade/ontologies/UKCompanies#Financial_and_insurance_activities"/>
+                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/SamiSaade/ontologies/UKCompanies/s"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+            </rdf:Description>
+        </swrl:head>
+    </rdf:Description>
+    <rdf:Description>
+        <swrla:isRuleEnabled rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</swrla:isRuleEnabled>
+        <rdfs:comment></rdfs:comment>
+        <rdfs:label>SIC6-ArtsandRecreation</rdfs:label>
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Imp"/>
+        <swrl:body>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#DatavaluedPropertyAtom"/>
+                        <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/SamiSaade/ontologies/UKCompanies#SIC_Code"/>
+                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/SamiSaade/ontologies/UKCompanies/s"/>
+                        <swrl:argument2 rdf:resource="http://www.semanticweb.org/SamiSaade/ontologies/UKCompanies/c"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                        <rdf:first>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#BuiltinAtom"/>
+                                <swrl:builtin rdf:resource="http://www.w3.org/2003/11/swrlb#greaterThan"/>
+                                <swrl:arguments>
+                                    <rdf:Description>
+                                        <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+                                        <rdf:first rdf:resource="http://www.semanticweb.org/SamiSaade/ontologies/UKCompanies/c"/>
+                                        <rdf:rest>
+                                            <rdf:Description>
+                                                <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+                                                <rdf:first rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">90000</rdf:first>
+                                                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                                            </rdf:Description>
+                                        </rdf:rest>
+                                    </rdf:Description>
+                                </swrl:arguments>
+                            </rdf:Description>
+                        </rdf:first>
+                        <rdf:rest>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                <rdf:first>
+                                    <rdf:Description>
+                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#BuiltinAtom"/>
+                                        <swrl:builtin rdf:resource="http://www.w3.org/2003/11/swrlb#lessThan"/>
+                                        <swrl:arguments>
+                                            <rdf:Description>
+                                                <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+                                                <rdf:first rdf:resource="http://www.semanticweb.org/SamiSaade/ontologies/UKCompanies/c"/>
+                                                <rdf:rest>
+                                                    <rdf:Description>
+                                                        <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+                                                        <rdf:first rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">94000</rdf:first>
+                                                        <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                                                    </rdf:Description>
+                                                </rdf:rest>
+                                            </rdf:Description>
+                                        </swrl:arguments>
+                                    </rdf:Description>
+                                </rdf:first>
+                                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                            </rdf:Description>
+                        </rdf:rest>
+                    </rdf:Description>
+                </rdf:rest>
+            </rdf:Description>
+        </swrl:body>
+        <swrl:head>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+                        <swrl:classPredicate rdf:resource="http://www.semanticweb.org/SamiSaade/ontologies/UKCompanies#Arts_entertainment_and_recreation"/>
+                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/SamiSaade/ontologies/UKCompanies/s"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+            </rdf:Description>
+        </swrl:head>
+    </rdf:Description>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.5.26.2023-07-17T20:34:13Z) https://github.com/owlcs/owlapi -->
+
