@@ -28,7 +28,7 @@ a complete data dump. To overcome that, the URIs are parsed individually, and th
 are ‘merged’ together using RDFLIB through an addition operation provided by the library.
 To make the parsing more attainable though, we need to be able to select valid URIs
 programmatically. Thus, the full company database was downloaded from
-‘https://download.companieshouse.gov.uk/en_output.html’ in csv from which allows us to
+(https://download.companieshouse.gov.uk/en_output.html) in csv from which allows us to
 extract the URIs using pandas and store it as a pickle file. The URIs are then iterated from
 the list, parsed, merging, and finally saving and serializing into a local turtle file. 
 
