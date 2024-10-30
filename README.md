@@ -1,7 +1,7 @@
 # UK Company Ontology
 
 This project builds an OWL Ontology using
-Protégé and populating it using the GOV.UK RDF data hosted on [‘business.data.gov.uk’](business.data.gov.uk)
+Protégé and populates it using the GOV.UK RDF data hosted on [‘business.data.gov.uk’](business.data.gov.uk)
 
 
 The data is readily available for public use without any license as per the
